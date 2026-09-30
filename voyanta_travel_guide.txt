@@ -1,0 +1,34 @@
+# Voyanta Travel Guide
+
+Brand: Voyanta
+Tagline: Curated Journeys Across Asia
+
+Color Palette:
+#F8F6F2
+#123524
+#3E5F44
+#E07A5F
+#D4A373
+
+Sections:
+Welcome Journey
+Explore Destinations
+Curated Packages
+Travel Experiences
+Itinerary Builder
+Hotels & Stays
+Local Recommendations
+Visa Information
+Booking Policies
+Cancellation Policies
+Reviews
+Travel Calendar
+Contact
+
+Animation:
+GSAP
+Framer Motion
+Lenis
+Parallax
+Interactive Maps
+Horizontal Scroll
