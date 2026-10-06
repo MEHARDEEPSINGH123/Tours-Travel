@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import SmoothScroll from "@/components/common/SmoothScroll";
 import CustomCursor from "@/components/common/CustomCursor";
+import Chatbot from "@/components/common/Chatbot";
 
 export const metadata: Metadata = {
   title: "Voyanta — Curated Journeys Across Singapore | Luxury Travel Atelier",
@@ -35,6 +36,7 @@ export default function RootLayout({
         <SmoothScroll>
           <CustomCursor />
           {children}
+          <Chatbot />
         </SmoothScroll>
       </body>
     </html>
