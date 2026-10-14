@@ -96,7 +96,7 @@ export default function QuickInquiryModal({
               <div className="flex items-center gap-3">
                 <span className="w-2 h-2 rounded-full bg-luxury" />
                 <span className="text-xs uppercase tracking-widest font-mono text-luxury">
-                  Voyanta Singapore Private Atelier
+                  Dagsis Tours &amp; Travel Dummy Atelier
                 </span>
               </div>
               <button
@@ -120,7 +120,7 @@ export default function QuickInquiryModal({
                       Design Your Bespoke Journey
                     </h3>
                     <p className="text-sm text-secondary font-sans leading-relaxed">
-                      Connect with our Singapore Senior Journey Curators at our Orchard suite or via private encrypted channel. All quotes tailored in Singapore Dollars (SGD) with Changi VIP coordination.
+                      Connect with our Singapore Senior Journey Curators at 123, Street ABC, State XYZ, Pin-000000 or via private encrypted channel. All quotes tailored in Singapore Dollars (SGD) with Changi VIP coordination.
                     </p>
                   </div>
 
@@ -158,14 +158,14 @@ export default function QuickInquiryModal({
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div>
                         <label className="block text-xs uppercase font-mono tracking-wider text-primary mb-1.5 font-medium">
-                          Singapore / WhatsApp Contact *
+                          Singapore / WhatsApp Contact (+65 XXXXXXXXX) *
                         </label>
                         <input
                           type="tel"
                           required
                           value={formData.phone}
                           onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                          placeholder="+65 9123 4567"
+                          placeholder="+65 XXXXXXXXX"
                           className="w-full bg-white border border-voyanta-border rounded-lg px-3.5 py-2.5 text-sm text-primary focus:outline-none focus:border-luxury transition-colors"
                         />
                       </div>
@@ -246,7 +246,7 @@ export default function QuickInquiryModal({
                         ) : (
                           <>
                             <Send className="w-4 h-4 text-luxury" />
-                            Submit Private Inquiry • Voyanta Concierge
+                            Submit Private Inquiry • Dagsis Concierge
                           </>
                         )}
                       </button>
@@ -280,7 +280,7 @@ export default function QuickInquiryModal({
                     </div>
                     <div className="flex justify-between">
                       <span className="font-mono uppercase text-[10px]">Atelier:</span>
-                      <span className="font-semibold text-primary">Voyanta Singapore HQ</span>
+                      <span className="font-semibold text-primary">Dagsis Tours &amp; Travel Dummy HQ</span>
                     </div>
                   </div>
 

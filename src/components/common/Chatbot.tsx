@@ -13,7 +13,7 @@ interface ChatbotProps {
 export default function Chatbot({
   agentId = '7ae4c13b-197b-409a-8301-13ac08fed72c',
   apiKey = 'ee5fc4db-02da-4041-939f-2a758fb613f6',
-  name = 'Voyanta AI Concierge',
+  name = 'Dagsis AI Concierge',
 }: ChatbotProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [iframeKey, setIframeKey] = useState(0);
@@ -47,7 +47,7 @@ export default function Chatbot({
           >
             <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
             <span className="text-white font-medium group-hover:text-luxury transition-colors">
-              Chat with Voyanta AI Concierge
+              Chat with Dagsis AI Concierge
             </span>
           </motion.div>
         )}
@@ -91,7 +91,7 @@ export default function Chatbot({
                 </div>
                 <div>
                   <h3 className="font-editorial text-sm font-semibold text-white tracking-wide">
-                    Voyanta AI Concierge
+                    Dagsis AI Concierge
                   </h3>
                   <div className="flex items-center gap-1.5 text-[10px] font-mono text-luxury">
                     <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
@@ -124,7 +124,7 @@ export default function Chatbot({
                 key={iframeKey}
                 src={embedUrl}
                 allow="clipboard-write"
-                title="Voyanta AI Chatbot"
+                title="Dagsis AI Chatbot"
                 className="w-full h-full border-none"
               />
             </div>

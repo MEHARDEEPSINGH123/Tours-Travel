@@ -5,11 +5,12 @@ import CustomCursor from "@/components/common/CustomCursor";
 import Chatbot from "@/components/common/Chatbot";
 
 export const metadata: Metadata = {
-  title: "Voyanta — Curated Journeys Across Singapore | Luxury Travel Atelier",
+  title: "Dagsis Tours & Travel Dummy — Curated Journeys Across Singapore | Luxury Travel Atelier",
   description:
-    "Discover extraordinary Singapore enclaves, handcrafted luxury itineraries, and unforgettable experiences. Singapore-based luxury travel atelier offering bespoke private voyages in SGD with Changi VIP coordination.",
+    "Discover extraordinary Singapore enclaves, handcrafted luxury itineraries, and unforgettable experiences. Dagsis Tours & Travel Dummy luxury travel atelier offering bespoke private voyages in SGD with Changi VIP coordination.",
   keywords: [
-    "Voyanta",
+    "Dagsis Tours & Travel Dummy",
+    "Dagsis",
     "Luxury Travel Singapore",
     "Raffles Hotel Palm Court",
     "Marina Bay SkyPark",
@@ -19,7 +20,7 @@ export const metadata: Metadata = {
     "Singapore Southern Islands Yacht",
     "Singapore Luxury Staycation"
   ],
-  authors: [{ name: "Voyanta Singapore" }],
+  authors: [{ name: "Dagsis Tours & Travel Dummy" }],
   icons: {
     icon: "/favicon.ico",
   },

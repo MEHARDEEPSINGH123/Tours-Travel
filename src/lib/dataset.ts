@@ -319,7 +319,7 @@ export const packages: EnrichedPackage[] = rawVoyantaData.tour_packages.map((pkg
       "Private VIP Changi Airport Meet & Greet with Chauffeur Limousine",
       "Daily Champagne Breakfast & Michelin-Starred Degustation Dinners",
       "Exclusive After-Hours National Gallery & Gardens by the Bay Entry",
-      "24/7 Dedicated Voyanta Singapore Concierge & Chauffeur"
+      "24/7 Dedicated Dagsis Singapore Concierge & Chauffeur"
     ],
     heroImage: dest.heroImage,
     rating: Number((4.93 + (index % 7) * 0.01).toFixed(2)),
@@ -478,7 +478,7 @@ const SINGAPORE_ENTRY_VISA_DATA = [
   { country: "Malaysia", status: "Visa-Free" as const, duration: "30 Days", time: "Instant clearance (ASEAN exemption)", req: ["Malaysian Passport (min 6 months)", "SG Arrival Card (for air/sea arrival)", "Valid vehicle pass if driving"], notes: "Malaysian passport holders enter visa-free for 30 days. Fast-track automated lanes at Changi and land checkpoints." },
   { country: "Indonesia", status: "Visa-Free" as const, duration: "30 Days", time: "Instant clearance (ASEAN)", req: ["Indonesian Passport (min 6 months)", "SG Arrival Card", "Return ticket"], notes: "Indonesian citizens enter visa-free for up to 30 days under ASEAN bilateral accords." },
   { country: "Thailand", status: "Visa-Free" as const, duration: "30 Days", time: "Instant clearance (ASEAN)", req: ["Thai Passport (min 6 months)", "SG Arrival Card", "Confirmed stay"], notes: "Visa exemption for up to 30 days across all ports of entry." },
-  { country: "India", status: "Instant ETA / eVisa" as const, duration: "Up to 30 Days", time: "1-3 Business Days online", req: ["Indian Passport (min 6 months)", "Submission via Singapore Authorized Visa Agent", "Confirmed roundtrip air ticket"], notes: "Indian travelers can obtain an electronic tourist visa through Voyanta Singapore Concierge or authorized agents." }
+  { country: "India", status: "Instant ETA / eVisa" as const, duration: "Up to 30 Days", time: "1-3 Business Days online", req: ["Indian Passport (min 6 months)", "Submission via Singapore Authorized Visa Agent", "Confirmed roundtrip air ticket"], notes: "Indian travelers can obtain an electronic tourist visa through Dagsis Singapore Concierge or authorized agents." }
 ];
 
 export const visaInfo: EnrichedVisaInfo[] = rawVoyantaData.visa_information.map((rawVisa, index) => {
@@ -500,7 +500,7 @@ export const visaInfo: EnrichedVisaInfo[] = rawVoyantaData.visa_information.map(
 
 // Enriched Booking Policies for Singapore Experiences
 const SINGAPORE_BOOKING_POLICIES_TEXTS = [
-  { title: "Transparent Singapore Dollar (SGD) Billing", text: "All Voyanta journeys and luxury hotel buyouts are strictly billed in Singapore Dollars (SGD). Prices include GST (9%) and service charges with zero hidden exchange markups." },
+  { title: "Transparent Singapore Dollar (SGD) Billing", text: "All Dagsis journeys and luxury hotel buyouts are strictly billed in Singapore Dollars (SGD). Prices include GST (9%) and service charges with zero hidden exchange markups." },
   { title: "Singapore Tourism Board (STB) Escrow Protection", text: "Your 25% commitment deposit is held in a protected escrow account compliant with the Singapore Travel Agent Act and Singapore Tourism Board regulatory framework (License #03829)." },
   { title: "Changi Airport VIP Fast-Track Coordination", text: "Every booking includes private tarmac meet-and-greet, VIP immigration escort, and Mercedes-Maybach transfer from Singapore Changi Terminals 1, 2, 3, or 4 directly to your hotel." },
   { title: "Dedicated Singapore Resident Concierge", text: "Your dedicated Journey Curator is physically based in Singapore and available 24/7 for instant restaurant adjustments, private yacht weather pivots, or champagne deliveries." },
@@ -525,11 +525,11 @@ export const bookingPolicies: EnrichedPolicy[] = rawVoyantaData.booking_policies
 
 // Enriched Cancellation Policies
 const SINGAPORE_CANCELLATION_POLICIES_TEXTS = [
-  { title: "Flexible 30-Day Peace-of-Mind Window", text: "Cancel up to 30 days prior to your journey start date for a 100% credit transfer to any future Voyanta Singapore voyage or 85% cash refund." },
-  { title: "Flight Disruption & Tropical Weather Shield", text: "If severe weather causes flight diversions or delays into Singapore Changi Airport, Voyanta automatically rearranges your suite and private transfers at zero penalty." },
+  { title: "Flexible 30-Day Peace-of-Mind Window", text: "Cancel up to 30 days prior to your journey start date for a 100% credit transfer to any future Dagsis Singapore voyage or 85% cash refund." },
+  { title: "Flight Disruption & Tropical Weather Shield", text: "If severe weather causes flight diversions or delays into Singapore Changi Airport, Dagsis automatically rearranges your suite and private transfers at zero penalty." },
   { title: "Complimentary Stay Date Rescheduling", text: "One complimentary date adjustment is permitted per booking with at least 14 days notice, subject only to hotel seasonal rate differences." },
   { title: "Transparent Tiered Refund Schedule", text: "15-29 days: 70% refund or full credit note; 7-14 days: 50% refund; Under 7 days: emergency rebooking assistance via dedicated Singapore concierge." },
-  { title: "Medical & Force Majeure Guarantee", text: "In the event of medical emergencies supported by a certified physician, Voyanta facilitates maximum refund recovery from luxury Singapore hotel partners." }
+  { title: "Medical & Force Majeure Guarantee", text: "In the event of medical emergencies supported by a certified physician, Dagsis facilitates maximum refund recovery from luxury Singapore hotel partners." }
 ];
 
 export const cancellationPolicies: EnrichedPolicy[] = rawVoyantaData.cancellation_policies.map((rawPolicy, index) => {
@@ -550,7 +550,7 @@ export const cancellationPolicies: EnrichedPolicy[] = rawVoyantaData.cancellatio
 
 // Enriched Local Recommendations for Singapore
 const SINGAPORE_RECOMMENDATIONS_POOL = [
-  { title: "Chef's Counter at Odette (3-Star Michelin)", category: "Food" as const, dest: "Marina Bay & Civic District", tip: "Located inside the National Gallery; Voyanta concierge secures exclusive window banquettes overlooking the atrium.", score: 9.9, tag: "Haute Gastronomy" },
+  { title: "Chef's Counter at Odette (3-Star Michelin)", category: "Food" as const, dest: "Marina Bay & Civic District", tip: "Located inside the National Gallery; Dagsis concierge secures exclusive window banquettes overlooking the atrium.", score: 9.9, tag: "Haute Gastronomy" },
   { title: "Dawn Stroll & Mist Canopy at Cloud Forest", category: "Attractions" as const, dest: "Marina Bay & Civic District", tip: "Enter at 09:00 AM sharp as the artificial mist geyser activates before general admission crowds arrive.", score: 9.9, tag: "Biophilic Wonder" },
   { title: "Private Wooden Bumboat Charter on Singapore River", category: "Experiences" as const, dest: "Civic District & Raffles", tip: "Sip chilled champagne while cruising from historic Fullerton Pier up to Robertson Quay under twilight bridges.", score: 9.8, tag: "River Sunset" },
   { title: "Authentic Nyonya Heirloom Feasting at Candlenut", category: "Food" as const, dest: "Dempsey Hill & Botanic Gardens", tip: "World's only Michelin-starred Peranakan restaurant; order the Buah Keluak beef short ribs with blue pea jasmine rice.", score: 9.8, tag: "Peranakan Michelin" },
@@ -574,7 +574,7 @@ export const recommendations: EnrichedRecommendation[] = rawVoyantaData.local_re
     title: index < SINGAPORE_RECOMMENDATIONS_POOL.length ? item.title : `${item.dest}: Singapore Experience ${index + 1}`,
     category: assignedCategory,
     destination: item.dest,
-    locationDetails: `Handpicked by Voyanta Singapore resident concierges & culinary tastemakers`,
+    locationDetails: `Handpicked by Dagsis Singapore resident concierges & culinary tastemakers`,
     editorialReview: item.tip,
     voyantaScore: item.score,
     tag: item.tag
@@ -593,10 +593,10 @@ const SINGAPORE_REVIEWER_AVATARS = [
 
 // Enriched Reviews from Discerning Singapore Travelers & Global Luxury Guests
 const SINGAPORE_REVIEWERS = [
-  { name: "Su-Lyn & Jeremy Tan", district: "Bukit Timah, Singapore", dest: "Capella Sentosa Clifftop Retreat", text: "We booked the Sentosa clifftop pool villa through Voyanta for our 15th wedding anniversary. The private catamaran to Lazarus Island and the private Auriga spa evening were utterly world-class." },
-  { name: "Sir David & Lady Harrington", district: "London & Singapore", dest: "Raffles Colonial Grandeur & 3-Star Odette", text: "Staying in the Palm Court Suite at Raffles combined with a private table at Odette was an unforgettable Singapore masterclass. Voyanta's white-glove chauffeur and concierge service was immaculate." },
+  { name: "Su-Lyn & Jeremy Tan", district: "Bukit Timah, Singapore", dest: "Capella Sentosa Clifftop Retreat", text: "We booked the Sentosa clifftop pool villa through Dagsis for our 15th wedding anniversary. The private catamaran to Lazarus Island and the private Auriga spa evening were utterly world-class." },
+  { name: "Sir David & Lady Harrington", district: "London & Singapore", dest: "Raffles Colonial Grandeur & 3-Star Odette", text: "Staying in the Palm Court Suite at Raffles combined with a private table at Odette was an unforgettable Singapore masterclass. Dagsis's white-glove chauffeur and concierge service was immaculate." },
   { name: "Michelle Koh", district: "Tanjong Pagar, Singapore", dest: "Southern Islands Catamaran & Champagne Charter", text: "Chartering the private catamaran for our family out to the Southern Islands was the best day of our year. Clear turquoise waters right here in Singapore, served by our private butler and chef." },
-  { name: "Marc & Isabelle Dupont", district: "Paris & Sentosa Cove", dest: "Peranakan Royal Atelier & Nyonya Heritage", text: "Voyanta's private access to restored Peranakan shophouse attics and the private masterclass at Candlenut opened our eyes to Singapore's profound living heritage. Outstanding curation." },
+  { name: "Marc & Isabelle Dupont", district: "Paris & Sentosa Cove", dest: "Peranakan Royal Atelier & Nyonya Heritage", text: "Dagsis's private access to restored Peranakan shophouse attics and the private masterclass at Candlenut opened our eyes to Singapore's profound living heritage. Outstanding curation." },
   { name: "Dr. Victor Chen", district: "River Valley, Singapore", dest: "Marina Bay SkyPark & Fullerton Heritage", text: "As a long-time Singapore resident, I never imagined seeing my home city with such enchantment. The twilight bumboat with vintage champagne and private cloud forest access were mesmerizing." },
   { name: "Eileen & Marcus Wong", district: "Tanglin, Singapore", dest: "Mandai VIP Night Safari & Rainforest", text: "Our children were thrilled by the private electric buggy at Night Safari and feeding the Asian elephants. Zero waiting time, private zoologist commentary, and luxury limousine throughout." }
 ];

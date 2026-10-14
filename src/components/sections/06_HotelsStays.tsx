@@ -39,7 +39,7 @@ export default function HotelsStays({ hotels, onBookStay }: HotelsStaysProps) {
               Sanctuaries of Rare Distinction
             </h2>
             <p className="text-secondary text-base sm:text-lg font-sans leading-relaxed">
-              Every accommodation in the Voyanta portfolio (50 certified partner estates) is an architectural masterpiece. We guarantee verified Singapore traveler VIP privileges including room upgrades, private butler service, and late check-outs.
+              Every accommodation in the Dagsis portfolio (50 certified partner estates) is an architectural masterpiece. We guarantee verified Singapore traveler VIP privileges including room upgrades, private butler service, and late check-outs.
             </p>
           </div>
 
@@ -136,7 +136,7 @@ export default function HotelsStays({ hotels, onBookStay }: HotelsStaysProps) {
                   <div className="p-3.5 rounded-xl bg-luxury/10 border border-luxury/20 space-y-1">
                     <div className="flex items-center gap-1.5 text-luxury-dark text-[11px] font-mono uppercase tracking-wider font-semibold">
                       <Gift className="w-3.5 h-3.5" />
-                      <span>Voyanta VIP Privilege</span>
+                      <span>Dagsis VIP Privilege</span>
                     </div>
                     <p className="text-xs text-primary/90 font-sans leading-tight">
                       {hotel.curatedPerk}

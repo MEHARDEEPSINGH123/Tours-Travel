@@ -48,7 +48,7 @@ export default function ContactInquiry() {
                 Initiate Your Journey
               </h2>
               <p className="text-voyanta-sand/80 text-base sm:text-lg font-sans leading-relaxed">
-                Connect with our Senior Journey Curators in Singapore. We welcome private appointments at our Orchard Road Atelier, Marina Bay Suite, or over encrypted digital consultations.
+                Connect with our Senior Journey Curators. We welcome private appointments at our Atelier at 123, Street ABC, State XYZ, Pin-000000, or over encrypted digital consultations.
               </p>
             </div>
 
@@ -57,10 +57,10 @@ export default function ContactInquiry() {
               <div className="p-5 rounded-2xl bg-white/5 border border-white/10 space-y-2">
                 <div className="flex items-center gap-2 text-luxury text-xs font-mono uppercase tracking-wider font-semibold">
                   <MapPin className="w-4 h-4" />
-                  <span>Voyanta Flagship Atelier</span>
+                  <span>Dagsis Flagship Atelier</span>
                 </div>
                 <p className="text-sm text-white font-editorial">
-                  290 Orchard Road, Paragon Tower 1, Level 18, Singapore 238859
+                  123, Street ABC, State XYZ, Pin-000000
                 </p>
                 <span className="text-[11px] font-mono text-white/50 block">
                   Private Valet Parking & Champagne Consultation Lounge
@@ -86,7 +86,7 @@ export default function ContactInquiry() {
                     <Phone className="w-3.5 h-3.5" />
                     <span>WhatsApp / Direct</span>
                   </div>
-                  <p className="text-sm text-white font-mono font-semibold">+65 6789 2026</p>
+                  <p className="text-sm text-white font-mono font-semibold">+65 XXXXXXXXX</p>
                 </div>
 
                 <div className="p-4 rounded-xl bg-white/5 border border-white/10 space-y-1">
@@ -94,7 +94,7 @@ export default function ContactInquiry() {
                     <Mail className="w-3.5 h-3.5" />
                     <span>Curator Email</span>
                   </div>
-                  <p className="text-sm text-white font-mono font-semibold">concierge@voyanta.sg</p>
+                  <p className="text-sm text-white font-mono font-semibold">concierge@dagsis.com</p>
                 </div>
               </div>
             </div>
@@ -151,14 +151,14 @@ export default function ContactInquiry() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
                     <label className="block text-xs uppercase font-mono tracking-wider text-primary mb-1 font-medium">
-                      Contact / WhatsApp (+65) *
+                      Contact / WhatsApp (+65 XXXXXXXXX) *
                     </label>
                     <input
                       type="tel"
                       required
                       value={formState.phone}
                       onChange={(e) => setFormState({ ...formState, phone: e.target.value })}
-                      placeholder="+65 9123 4567"
+                      placeholder="+65 XXXXXXXXX"
                       className="w-full bg-voyanta-bg border border-border rounded-xl px-4 py-2.5 text-xs text-primary focus:outline-none focus:border-luxury"
                     />
                   </div>
@@ -242,7 +242,7 @@ export default function ContactInquiry() {
                   ) : (
                     <>
                       <Send className="w-4 h-4 text-luxury" />
-                      Submit Dossier Request • Voyanta Concierge
+                      Submit Dossier Request • Dagsis Concierge
                     </>
                   )}
                 </button>

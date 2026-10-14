@@ -19,8 +19,8 @@ export default function Footer() {
                 <Compass className="w-5 h-5" />
               </div>
               <div>
-                <span className="font-editorial text-3xl font-semibold tracking-tight text-white block leading-none">
-                  VOYANTA
+                <span className="font-editorial text-2xl sm:text-3xl font-semibold tracking-tight text-white block leading-none">
+                  Dagsis Tours &amp; Travel Dummy
                 </span>
                 <span className="font-mono text-[9px] uppercase tracking-[0.25em] text-luxury block mt-1">
                   Singapore • Curated Journeys
@@ -29,7 +29,7 @@ export default function Footer() {
             </div>
 
             <p className="text-xs text-voyanta-sand/70 font-sans max-w-sm leading-relaxed">
-              Voyanta is a premier Singapore-based luxury travel atelier dedicated to slow, experiential, and culturally profound journeys across Asia, Europe, and Australasia.
+              Dagsis Tours &amp; Travel Dummy is a premier Singapore-based luxury travel atelier dedicated to slow, experiential, and culturally profound journeys across Asia, Europe, and Australasia.
             </p>
 
             <div className="pt-2 text-xs font-mono text-voyanta-sand/60 space-y-1">
@@ -74,9 +74,9 @@ export default function Footer() {
               Singapore Presence
             </h4>
             <div className="space-y-2 text-xs font-sans text-voyanta-sand/80 leading-relaxed">
-              <p>290 Orchard Road, Paragon Tower 1, #18-08, Singapore 238859</p>
-              <p className="font-mono text-[11px] text-luxury">+65 6789 2026</p>
-              <p className="font-mono text-[11px]">concierge@voyanta.sg</p>
+              <p>123, Street ABC, State XYZ, Pin-000000</p>
+              <p className="font-mono text-[11px] text-luxury">+65 XXXXXXXXX</p>
+              <p className="font-mono text-[11px]">concierge@dagsis.com</p>
               <p className="text-[11px] text-white/50">Changi VIP Lounges T1-T4</p>
             </div>
           </div>
@@ -85,7 +85,7 @@ export default function Footer() {
         {/* Bottom Tier */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-voyanta-sand/60">
           <div>
-            &copy; {new Date().getFullYear()} Voyanta Travel Singapore Pte. Ltd. All rights reserved.
+            &copy; {new Date().getFullYear()} Dagsis Tours &amp; Travel Dummy Pte. Ltd. All rights reserved.
           </div>
 
           <div className="flex items-center gap-6">

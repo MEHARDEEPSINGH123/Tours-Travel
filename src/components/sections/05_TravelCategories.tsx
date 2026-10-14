@@ -39,7 +39,7 @@ export default function TravelCategories({
 
           <div className="text-right">
             <span className="text-xs font-mono text-secondary block uppercase tracking-widest">
-              Voyanta Curated Spectrum
+              Dagsis Curated Spectrum
             </span>
             <span className="font-editorial text-2xl text-primary font-medium">
               8 Defined Disciplines

@@ -87,7 +87,7 @@ export default function Hero({ onOpenInquiry }: { onOpenInquiry: () => void }) {
         <div className="flex flex-wrap items-center justify-between gap-4 border-b border-white/15 pb-4">
           <div className="flex items-center gap-3">
             <span className="px-2.5 py-1 rounded-full bg-luxury/20 border border-luxury/40 text-luxury font-mono text-[11px] uppercase tracking-widest font-semibold backdrop-blur-sm">
-              Vol. XXIV • Voyanta Singapore Edition
+              Vol. XXIV • Dagsis Tours &amp; Travel Dummy Edition
             </span>
             <span className="hidden sm:inline text-white/50 text-xs font-mono">
               The Luxury Singapore Experience Atelier

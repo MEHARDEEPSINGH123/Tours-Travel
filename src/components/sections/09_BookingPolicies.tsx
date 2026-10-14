@@ -23,7 +23,7 @@ export default function BookingPolicies({ bookingPolicies }: BookingPoliciesProp
               Booking Terms & Escrow Protections
             </h2>
             <p className="text-secondary text-base sm:text-lg font-sans leading-relaxed">
-              Every Voyanta journey operates under Singapore Tourism Board (STB) regulatory licensing (TA #03829). All client deposits are secured in regulated trust accounts with transparent Singapore Dollar (SGD) billing and Changi VIP synchronization.
+              Every Dagsis journey operates under Singapore Tourism Board (STB) regulatory licensing (TA #03829). All client deposits are secured in regulated trust accounts with transparent Singapore Dollar (SGD) billing and Changi VIP synchronization.
             </p>
           </div>
 

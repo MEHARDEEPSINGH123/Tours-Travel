@@ -128,8 +128,8 @@ export default function Navigation() {
               <Compass className="w-4 h-4 sm:w-4.5 sm:h-4.5 2xl:w-5 2xl:h-5" />
             </div>
             <div className="shrink-0">
-              <span className="font-editorial text-xl sm:text-2xl 2xl:text-3xl tracking-tight text-primary font-semibold block leading-none">
-                VOYANTA
+              <span className="font-editorial text-lg sm:text-xl 2xl:text-2xl tracking-tight text-primary font-semibold block leading-none">
+                Dagsis Tours &amp; Travel Dummy
               </span>
               <span className="font-mono text-[8px] sm:text-[9px] uppercase tracking-[0.2em] sm:tracking-[0.25em] text-secondary block mt-0.5">
                 Singapore • Curated Journeys
@@ -281,8 +281,8 @@ export default function Navigation() {
               <div>
                 <div className="flex items-center justify-between pb-6 border-b border-border">
                   <div>
-                    <span className="font-editorial text-2xl tracking-tight text-primary font-semibold">
-                      VOYANTA
+                    <span className="font-editorial text-xl tracking-tight text-primary font-semibold">
+                      Dagsis Tours &amp; Travel Dummy
                     </span>
                     <span className="block font-mono text-[9px] uppercase tracking-widest text-secondary">
                       Singapore Luxury Travel Atelier

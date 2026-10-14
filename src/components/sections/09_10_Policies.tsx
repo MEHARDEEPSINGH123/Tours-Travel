@@ -32,7 +32,7 @@ export default function PoliciesSection({
               Uncompromising Transparency
             </h2>
             <p className="text-secondary text-base sm:text-lg font-sans leading-relaxed">
-              Every Voyanta journey operates under Singapore Tourism Board (STB) regulatory licensing. Complete peace of mind with 60-day flexible cancellation windows, transparent SGD deposits, and Changi flight synchronization.
+              Every Dagsis journey operates under Singapore Tourism Board (STB) regulatory licensing. Complete peace of mind with 60-day flexible cancellation windows, transparent SGD deposits, and Changi flight synchronization.
             </p>
           </div>
 
