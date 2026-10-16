@@ -36,7 +36,7 @@ class NumberedCanvas(canvas.Canvas):
             # Running Header
             self.setFont("Helvetica-Bold", 8)
             self.setFillColor(colors.HexColor("#123524"))
-            self.drawString(54, 755, "VOYANTA LUXURY TRAVEL ATELIER")
+            self.drawString(54, 755, "LUXURY TOURS & TRAVEL ATELIER")
             self.setFont("Helvetica", 8)
             self.setFillColor(colors.HexColor("#666666"))
             self.drawString(215, 755, "|   AI CHATBOT KNOWLEDGE BASE & SYSTEM RAG DOSSIER")
@@ -227,7 +227,7 @@ def build_pdf():
 
     # ==================== COVER PAGE ====================
     story.append(Spacer(1, 40))
-    story.append(Paragraph("VOYANTA LUXURY TRAVEL ATELIER", ParagraphStyle(
+    story.append(Paragraph("LUXURY TOURS & TRAVEL ATELIER", ParagraphStyle(
         'CoverPre', fontName='Helvetica-Bold', fontSize=10, leading=12, textColor=c_luxury, spaceAfter=8
     )))
     story.append(Paragraph("AI Chatbot Comprehensive Knowledge Base & System Context Dossier", title_style))
@@ -235,8 +235,8 @@ def build_pdf():
     story.append(HRFlowable(width="100%", thickness=2, color=c_luxury, spaceBefore=5, spaceAfter=20))
 
     meta_table_data = [
-        [Paragraph("<b>Company Legal Name:</b>", body_style), Paragraph("Voyanta Pte. Ltd. (Voyanta Singapore Private Atelier)", body_style)],
-        [Paragraph("<b>Singapore Headquarters:</b>", body_style), Paragraph("390 Orchard Road, Palais Renaissance, #12-01, Singapore 238871", body_style)],
+        [Paragraph("<b>Operational Identity:</b>", body_style), Paragraph("Licensed Singapore Travel Atelier & Concierge", body_style)],
+        [Paragraph("<b>Headquarters Address:</b>", body_style), Paragraph("123, Street ABC, State XYZ, Pin-000000", body_style)],
         [Paragraph("<b>Regulatory Licensing:</b>", body_style), Paragraph("Singapore Tourism Board (STB) Licensed Travel Agent #03829", body_style)],
         [Paragraph("<b>Consumer Protection:</b>", body_style), Paragraph("Travel Agents Act (Cap. 334), CASETrust for Travel Accredited", body_style)],
         [Paragraph("<b>Base Accounting Currency:</b>", body_style), Paragraph("Singapore Dollar (SGD / S$) with real-time multi-currency support", body_style)],
@@ -258,7 +258,7 @@ def build_pdf():
     story.append(Spacer(1, 25))
 
     story.append(make_callout(
-        "This document is an exhaustive system reference for AI conversational agents serving as Voyanta Senior Journey Concierges. "
+        "This document is an exhaustive system reference for AI conversational agents serving as Senior Journey Concierges. "
         "Every pricing rule, enclave detail, itinerary structure, hotel perk, visa note, and policy herein represents authoritative atelier truth. "
         "The AI must adhere strictly to these facts, avoid hallucinations, and uphold Singapore's highest standards of luxury hospitality."
     ))
@@ -271,7 +271,7 @@ def build_pdf():
 
     toc_items = [
         ("Chapter 1: AI Chatbot Persona, System Instructions & Behavioral Guardrails", "Page 3"),
-        ("Chapter 2: Corporate Profile, Accreditation, Concierge Directory & Escalations", "Page 4"),
+        ("Chapter 2: Licensing, Accreditation, Concierge Directory & Escalations", "Page 4"),
         ("Chapter 3: Currency Architecture, Taxation (9% GST + 10% Service Charge) & Foreign Rates", "Page 5"),
         ("Chapter 4: Singapore Destination Enclaves & Precinct Terroirs Guide (50 Zones)", "Page 6"),
         ("Chapter 5: Signature Tour Packages Catalog & Pricing Matrix (100 Curated Journeys)", "Page 8"),
@@ -307,7 +307,7 @@ def build_pdf():
 
     story.append(Paragraph("1.1 System Identity & Conversational Persona", h2_style))
     story.append(Paragraph(
-        "The chatbot acts as the <b>Voyanta Senior Journey Concierge</b>, a world-class, discreet, and deeply cultured Singapore travel specialist. "
+        "The chatbot acts as the <b>Senior Journey Concierge</b>, a world-class, discreet, and deeply cultured Singapore travel specialist. "
         "The chatbot is authoritative yet gracious, warm, and highly knowledgeable about Singapore's architectural heritage, Michelin gastronomy, Southern Island marine terroirs, and luxury hospitality.",
         body_style
     ))
@@ -332,13 +332,13 @@ def build_pdf():
     story.append(Spacer(1, 10))
 
     # ==================== CHAPTER 2 ====================
-    story.append(Paragraph("Chapter 2: Corporate Profile, Accreditation, Concierge Directory & Escalations", h1_style))
+    story.append(Paragraph("Chapter 2: Licensing, Accreditation, Concierge Directory & Escalations", h1_style))
     story.append(HRFlowable(width="100%", thickness=1, color=c_luxury, spaceBefore=4, spaceAfter=12))
 
-    story.append(Paragraph("2.1 Corporate Identity & Legal Standing", h2_style))
+    story.append(Paragraph("2.1 Licensing & Statutory Standing", h2_style))
     story.append(Paragraph(
-        "<b>Voyanta (Voyanta Pte. Ltd.)</b> is a bespoke Singapore-based travel atelier licensed under the Singapore Tourism Board (Travel Agent License TA#03829) "
-        "and regulated by the Travel Agents Act (Cap. 334). Voyanta maintains CASETrust for Travel accreditation and is a certified member of the National Association of Travel Agents Singapore (NATAS).",
+        "The atelier is a bespoke Singapore-based luxury travel agency licensed under the Singapore Tourism Board (Travel Agent License TA#03829) "
+        "and regulated by the Travel Agents Act (Cap. 334). The atelier maintains CASETrust for Travel accreditation and is a certified member of the National Association of Travel Agents Singapore (NATAS).",
         body_style
     ))
     story.append(Paragraph(
@@ -349,10 +349,10 @@ def build_pdf():
     story.append(Paragraph("2.2 Official Contact Directory & Concierge Desks", h2_style))
     contact_data = [
         [Paragraph("<b>Channel / Office</b>", table_header_style), Paragraph("<b>Direct Coordinate / Access</b>", table_header_style), Paragraph("<b>Operating Hours / SLA</b>", table_header_style)],
-        [Paragraph("Flagship Private Atelier", table_cell_bold), Paragraph("390 Orchard Road, Palais Renaissance, #12-01, Singapore 238871", table_cell_style), Paragraph("Mon–Sat: 09:30 – 19:30 SGT (Private appointment preferred)", table_cell_style)],
-        [Paragraph("24/7 Global Concierge Hotline", table_cell_bold), Paragraph("+65 6789 2389 / +65 9123 4567", table_cell_style), Paragraph("24 hours / 365 days (Immediate response)", table_cell_style)],
-        [Paragraph("VIP Client WhatsApp Line", table_cell_bold), Paragraph("+65 9123 4567 (Dedicated encrypted channel)", table_cell_style), Paragraph("< 5 minutes response time", table_cell_style)],
-        [Paragraph("General Inquiries & Bookings", table_cell_bold), Paragraph("concierge@voyanta.sg / voyages@voyanta.sg", table_cell_style), Paragraph("< 2 hours guaranteed turnaround", table_cell_style)],
+        [Paragraph("Flagship Private Atelier", table_cell_bold), Paragraph("123, Street ABC, State XYZ, Pin-000000", table_cell_style), Paragraph("Mon–Sat: 09:30 – 19:30 SGT (Private appointment preferred)", table_cell_style)],
+        [Paragraph("24/7 Global Concierge Hotline", table_cell_bold), Paragraph("+65 XXXXXXXXX", table_cell_style), Paragraph("24 hours / 365 days (Immediate response)", table_cell_style)],
+        [Paragraph("VIP Client WhatsApp Line", table_cell_bold), Paragraph("+65 XXXXXXXXX (Dedicated encrypted channel)", table_cell_style), Paragraph("< 5 minutes response time", table_cell_style)],
+        [Paragraph("General Inquiries & Bookings", table_cell_bold), Paragraph("concierge@toursandtravel.com / info@toursandtravel.com", table_cell_style), Paragraph("< 2 hours guaranteed turnaround", table_cell_style)],
         [Paragraph("Changi Airport Airside Operations", table_cell_bold), Paragraph("Changi Terminals 1, 2, 3 & 4 VIP JetQuay Lounges", table_cell_style), Paragraph("Coordinated per flight manifest", table_cell_style)],
     ]
     t_contact = Table(contact_data, colWidths=[140, 210, 154])
@@ -372,8 +372,8 @@ def build_pdf():
 
     story.append(Paragraph("3.1 Currency System & All-Inclusive Pricing Standard", h2_style))
     story.append(Paragraph(
-        "All Voyanta experiences, packages, stays, and bespoke upgrades are legally anchored in <b>Singapore Dollars (SGD / S$)</b>. "
-        "Voyanta operates on a strict <b>All-Inclusive Transparency Standard</b>: every published rate includes the mandatory 9% Singapore Goods and Services Tax (GST) "
+        "All curated experiences, packages, stays, and bespoke upgrades are legally anchored in <b>Singapore Dollars (SGD / S$)</b>. "
+        "The atelier operates on a strict <b>All-Inclusive Transparency Standard</b>: every published rate includes the mandatory 9% Singapore Goods and Services Tax (GST) "
         "and standard 10% hospitality service charge. Travelers never encounter hidden resort fees, credit card transaction surcharges, or unexpected administrative add-ons.",
         body_style
     ))
@@ -408,7 +408,7 @@ def build_pdf():
     story.append(HRFlowable(width="100%", thickness=1, color=c_luxury, spaceBefore=4, spaceAfter=12))
 
     story.append(Paragraph(
-        "Voyanta categorizes Singapore into 5 distinct geographic and cultural enclaves, encompassing 50 certified micro-precincts. "
+        "Singapore is categorized into 5 distinct geographic and cultural enclaves, encompassing 50 certified micro-precincts. "
         "The AI Chatbot should guide clients to destinations aligned with their personal travel tastes:",
         body_style
     ))
@@ -486,7 +486,7 @@ def build_pdf():
 
     story.append(Paragraph("5.1 Package Architecture & Travel Styles", h2_style))
     story.append(Paragraph(
-        "Voyanta maintains 100 distinctive journey packages (PKG001 to PKG100) organized across 8 primary travel disciplines. "
+        "The collection maintains 100 distinctive journey packages (PKG001 to PKG100) organized across 8 primary travel disciplines. "
         "Every package includes private luxury airport and in-city transfers, dedicated journey concierges, curated 5-star estate accommodations, and private access privileges.",
         body_style
     ))
@@ -557,7 +557,7 @@ def build_pdf():
 
     story.append(Paragraph("6.1 Itinerary Architecture & Daily Sequencing", h2_style))
     story.append(Paragraph(
-        "Voyanta itineraries are meticulously choreographed to optimize climatic comfort in Singapore's tropical environment. "
+        "Itineraries are meticulously choreographed to optimize climatic comfort in Singapore's tropical environment. "
         "Outdoor heritage walks and island activities are scheduled for cooler morning hours (08:30–11:00) and twilight/sunset periods (17:30–21:00), "
         "with midday heat reserved for climate-controlled Michelin dining, art galleries, high tea, or wellness spa treatments.",
         body_style
@@ -606,10 +606,10 @@ def build_pdf():
     story.append(Paragraph("Chapter 7: Luxury Hotels & Hospitality Sanctuaries Portfolio (50 Certified Properties)", h1_style))
     story.append(HRFlowable(width="100%", thickness=1, color=c_luxury, spaceBefore=4, spaceAfter=12))
 
-    story.append(Paragraph("7.1 Estate Criteria & Guaranteed Voyanta VIP Privileges", h2_style))
+    story.append(Paragraph("7.1 Estate Criteria & Guaranteed VIP Privileges", h2_style))
     story.append(Paragraph(
-        "Every hotel in the Voyanta 50-property certified portfolio (HOT001 to HOT050) has undergone rigorous independent inspection. "
-        "When booked through Voyanta, guests receive the following guaranteed complimentary privileges without surcharge:",
+        "Every hotel in the 50-property certified portfolio (HOT001 to HOT050) has undergone rigorous independent inspection. "
+        "When booked through our concierge, guests receive the following guaranteed complimentary privileges without surcharge:",
         body_style
     ))
     hotel_perks = [
@@ -654,18 +654,18 @@ def build_pdf():
 
     story.append(Paragraph("8.1 Culinary Excellence & Michelin Curation", h2_style))
     story.append(Paragraph(
-        "Singapore represents one of the world's most concentrated culinary territories. Voyanta's concierge desk holds direct reservations "
+        "Singapore represents one of the world's most concentrated culinary territories. Our concierge desk holds direct reservations "
         "and chef counter relationships across Singapore's leading gastronomic establishments:",
         body_style
     ))
 
     dining_curations = [
-        ("Odette (3-Star Michelin)", "National Gallery Singapore", "French Haute Cuisine", "Helmed by Chef Julien Royer; delicate French cooking celebrating Asian seasonality. Voyanta secures exclusive window banquettes overlooking the historical gallery rotunda."),
+        ("Odette (3-Star Michelin)", "National Gallery Singapore", "French Haute Cuisine", "Helmed by Chef Julien Royer; delicate French cooking celebrating Asian seasonality. Our concierge secures exclusive window banquettes overlooking the historical gallery rotunda."),
         ("Les Amis (3-Star Michelin)", "Shaw Centre, Orchard", "Classic French Haute Gastronomy", "Grand French dining with an encyclopedic 3,000-label wine cellar. Formal dress code strictly observed; private salon reservations guaranteed."),
         ("Zén (3-Star Michelin)", "Bukit Pasoh Road", "Nordic-Japanese Kaiseki", "Sister restaurant to Stockholm's Frantzén. Immersive multi-story dining experience through a 1920s heritage shophouse."),
         ("Candlenut (1-Star Michelin)", "Dempsey Hill", "Refined Straits Peranakan", "The world's first and only Michelin-starred Peranakan restaurant by Chef Malcolm Lee. Signature: Buah Keluak beef short ribs and blue pea rice."),
-        ("Burnt Ends (1-Star Michelin)", "Dempsey Hill", "Modern Australian Wood-Fired", "Custom dual-cavity apple and almond wood ovens; counter dining with Chef Dave Pynt. One of the toughest reservations in Asia; secured via Voyanta."),
-        ("Lau Pa Sat Satay Street", "Downtown Financial District", "Hawker Charcoal Grill Culture", "Boon Tat Street closes nightly at 7 PM for open-air charcoal satay carts. Voyanta provides reserved seated lounge service at Stalls 7 & 8.")
+        ("Burnt Ends (1-Star Michelin)", "Dempsey Hill", "Modern Australian Wood-Fired", "Custom dual-cavity apple and almond wood ovens; counter dining with Chef Dave Pynt. One of the toughest reservations in Asia; secured via our concierge."),
+        ("Lau Pa Sat Satay Street", "Downtown Financial District", "Hawker Charcoal Grill Culture", "Boon Tat Street closes nightly at 7 PM for open-air charcoal satay carts. Our concierge provides reserved seated lounge service at Stalls 7 & 8.")
     ]
     dining_data = [
         [Paragraph("<b>Establishment</b>", table_header_style), Paragraph("<b>Location</b>", table_header_style), Paragraph("<b>Cuisine Style</b>", table_header_style), Paragraph("<b>Concierge Curation & Access Privilege</b>", table_header_style)]
@@ -704,7 +704,7 @@ def build_pdf():
     story.append(Paragraph("Chapter 9: Exclusive VIP Add-Ons & Bespoke Upgrade Menu", h1_style))
     story.append(HRFlowable(width="100%", thickness=1, color=c_luxury, spaceBefore=4, spaceAfter=12))
 
-    story.append(Paragraph("Clients may customize any Voyanta itinerary with the following standalone ultra-luxury upgrades:", body_style))
+    story.append(Paragraph("Clients may customize any itinerary with the following standalone ultra-luxury upgrades:", body_style))
 
     addons = [
         ("Changi Tarmac VIP Limousine Meet", "S$350 / arrival", "Changi JetQuay VIP escort directly from aircraft air-bridge, expedited private diplomatic customs clearance, Mercedes-Maybach transfer to hotel."),
@@ -744,7 +744,7 @@ def build_pdf():
     story.append(Paragraph(
         "<b>All foreign travelers</b> entering Singapore must submit the electronic <b>SG Arrival Card (SGAC)</b> with Health Declaration within <b>3 days (72 hours)</b> "
         "prior to arrival in Singapore. Submission is 100% free of charge via the official Immigration & Checkpoints Authority (ICA) portal or MyICA Mobile app. "
-        "Voyanta concierges pre-fill and verify SGAC submissions for all confirmed journey guests.",
+        "Our concierges pre-fill and verify SGAC submissions for all confirmed journey guests.",
         body_style
     ))
 
@@ -763,7 +763,7 @@ def build_pdf():
         [Paragraph("Japan / South Korea", table_cell_bold), Paragraph("Visa-Free", table_cell_style), Paragraph("90 Days", table_cell_style), Paragraph("Passport with 6 months validity + SGAC", table_cell_style)],
         [Paragraph("ASEAN Member States", table_cell_bold), Paragraph("Visa-Free", table_cell_style), Paragraph("30 Days", table_cell_style), Paragraph("Passport with 6 months validity + SGAC", table_cell_style)],
         [Paragraph("China (PRC)", table_cell_bold), Paragraph("Mutual Visa Exemption", table_cell_style), Paragraph("30 Days", table_cell_style), Paragraph("Mutual 30-day visa exemption effective Feb 2024", table_cell_style)],
-        [Paragraph("India (Assessment Level I)", table_cell_bold), Paragraph("eVisa Required", table_cell_style), Paragraph("30 Days", table_cell_style), Paragraph("Processed in 1–3 business days via Voyanta authorized agent", table_cell_style)],
+        [Paragraph("India (Assessment Level I)", table_cell_bold), Paragraph("eVisa Required", table_cell_style), Paragraph("30 Days", table_cell_style), Paragraph("Processed in 1–3 business days via our authorized agent", table_cell_style)],
         [Paragraph("CIS / Ukraine / Central Asia", table_cell_bold), Paragraph("eVisa Required", table_cell_style), Paragraph("30 Days", table_cell_style), Paragraph("Assessment Level I; submitted via local Singapore sponsor", table_cell_style)],
         [Paragraph("Assessment Level II (e.g. ME)", table_cell_bold), Paragraph("Entry Visa Required", table_cell_style), Paragraph("Up to 30 Days", table_cell_style), Paragraph("Submission 2–4 weeks prior; letter of introduction required", table_cell_style)]
     ]
@@ -796,7 +796,7 @@ def build_pdf():
 
     story.append(Paragraph("11.1 Booking Lifecycle & Deposit Schedule", h2_style))
     story.append(Paragraph(
-        "To commission a bespoke Voyanta journey, travelers follow a structured 3-phase booking process:",
+        "To commission a bespoke luxury journey, travelers follow a structured 3-phase booking process:",
         body_style
     ))
     booking_steps = [
@@ -828,7 +828,7 @@ def build_pdf():
 
     story.append(Paragraph("12.1 Flexible 30-Day Peace-of-Mind Guarantee", h2_style))
     story.append(Paragraph(
-        "Voyanta recognizes that luxury travel plans require flexibility. We provide an industry-leading 30-day cancellation shield:",
+        "We recognize that luxury travel plans require flexibility. We provide an industry-leading 30-day cancellation shield:",
         body_style
     ))
 
@@ -837,7 +837,7 @@ def build_pdf():
         [Paragraph("30 or more days", table_cell_bold), Paragraph("100% Full Credit Transfer", table_cell_bold), Paragraph("85% Cash Refund", table_cell_style), Paragraph("Credit note valid for 24 months across all Singapore experiences.", table_cell_style)],
         [Paragraph("15 to 29 days", table_cell_bold), Paragraph("100% Credit Note", table_cell_style), Paragraph("70% Cash Refund", table_cell_style), Paragraph("Subject to unrecoverable partner hotel deposit limits.", table_cell_style)],
         [Paragraph("7 to 14 days", table_cell_bold), Paragraph("75% Credit Note", table_cell_style), Paragraph("50% Cash Refund", table_cell_style), Paragraph("Rebooking dates permitted within same calendar year.", table_cell_style)],
-        [Paragraph("Under 7 days / No-Show", table_cell_bold), Paragraph("Emergency Review", table_cell_style), Paragraph("0% Cash Refund", table_cell_style), Paragraph("Voyanta concierge facilitates maximum supplier recovery on best-effort basis.", table_cell_style)]
+        [Paragraph("Under 7 days / No-Show", table_cell_bold), Paragraph("Emergency Review", table_cell_style), Paragraph("0% Cash Refund", table_cell_style), Paragraph("Our concierge facilitates maximum supplier recovery on best-effort basis.", table_cell_style)]
     ]
     t_canc = Table(canc_schedule, colWidths=[120, 110, 100, 174])
     t_canc.setStyle(TableStyle([
@@ -853,14 +853,14 @@ def build_pdf():
     story.append(Paragraph("12.2 Tropical Weather & Changi Flight Disruption Shield", h2_style))
     story.append(Paragraph(
         "If severe meteorological events or airline flight disruptions cause flight delays, cancellations, or diversions into Singapore Changi Airport, "
-        "Voyanta automatically reschedules your private limousine transfers, itinerary timings, and hotel room reservations at zero administrative penalty.",
+        "Our concierge automatically reschedules your private limousine transfers, itinerary timings, and hotel room reservations at zero administrative penalty.",
         body_style
     ))
 
     story.append(Paragraph("12.3 Medical & Force Majeure Safeguards", h2_style))
     story.append(Paragraph(
         "In the event of documented medical emergencies (supported by an official physician certificate) or recognized force majeure events, "
-        "Voyanta waives standard cancellation timeframes and processes maximum refund recovery from luxury Singapore estate partners.",
+        "Our concierge waives standard cancellation timeframes and processes maximum refund recovery from luxury Singapore estate partners.",
         body_style
     ))
 
@@ -906,17 +906,17 @@ def build_pdf():
     story.append(HRFlowable(width="100%", thickness=1, color=c_luxury, spaceBefore=4, spaceAfter=12))
 
     faqs = [
-        ("Q1: Can I customize every day of my Voyanta journey?",
-         "Yes, absolutely. Voyanta specializes in 100% handcrafted bespoke itineraries. Every day plan, dining reservation, pace calibration, and accommodation is tailored to your desires by our Senior Journey Curators."),
+        ("Q1: Can I customize every day of my journey?",
+         "Yes, absolutely. We specialize in 100% handcrafted bespoke itineraries. Every day plan, dining reservation, pace calibration, and accommodation is tailored to your desires by our Senior Journey Curators."),
         
-        ("Q2: In what currency are Voyanta prices quoted and charged?",
+        ("Q2: In what currency are prices quoted and charged?",
          "All prices are quoted and settled in Singapore Dollars (SGD / S$). We provide real-time approximate conversions into USD, EUR, GBP, AUD, and JPY for reference."),
 
         ("Q3: Are taxes and service charges included in the published prices?",
-         "Yes. Voyanta adheres to a transparent all-inclusive policy. All quoted rates include the 9% Singapore GST and 10% hospitality service charge. There are zero hidden fees."),
+         "Yes. We adhere to a transparent all-inclusive policy. All quoted rates include the 9% Singapore GST and 10% hospitality service charge. There are zero hidden fees."),
 
         ("Q4: Do I need a visa to visit Singapore?",
-         "Passport holders from the US, UK, EU, Canada, Australia, Japan, and ASEAN enter visa-free for 30 to 90 days. PRC citizens enjoy a 30-day mutual exemption. Indian nationals and Level I/II nationalities require an e-Visa, which Voyanta facilitates."),
+         "Passport holders from the US, UK, EU, Canada, Australia, Japan, and ASEAN enter visa-free for 30 to 90 days. PRC citizens enjoy a 30-day mutual exemption. Indian nationals and Level I/II nationalities require an e-Visa, which our concierge facilitates."),
 
         ("Q5: What is the SG Arrival Card (SGAC)?",
          "The SG Arrival Card is a mandatory electronic entry and health declaration that every foreign visitor must submit online within 3 days prior to arrival. It is free via the official ICA website."),
@@ -924,19 +924,19 @@ def build_pdf():
         ("Q6: How far in advance should I book my Singapore journey?",
          "We recommend booking 4 to 8 weeks in advance for standard luxury itineraries, and 4 to 6 months in advance for peak periods such as the Singapore Grand Prix (September) or Festive Season (December)."),
 
-        ("Q7: How does airport arrival work with Voyanta?",
+        ("Q7: How does airport arrival work with our concierge?",
          "Our standard luxury package includes private arrival coordination. For VIP upgrades, a dedicated Changi JetQuay representative meets you at the aircraft air-bridge, escorts you through private diplomatic customs, and transfers you into a chauffeured Mercedes-Maybach or Rolls-Royce."),
 
-        ("Q8: What is Voyanta's cancellation policy?",
+        ("Q8: What is the cancellation policy?",
          "We offer a 30-Day Peace-of-Mind Guarantee: cancellations made 30+ days prior receive a 100% credit note (valid 24 months) or an 85% cash refund. Tiered refund options apply within 15–29 days."),
 
         ("Q9: What happens if my flight to Singapore is delayed or cancelled?",
-         "Under our Weather & Flight Disruption Shield, Voyanta automatically rearranges your chauffeur transfers, hotel suites, and curated dining bookings at zero penalty if flights are disrupted."),
+         "Under our Weather & Flight Disruption Shield, our concierge automatically rearranges your chauffeur transfers, hotel suites, and curated dining bookings at zero penalty if flights are disrupted."),
 
-        ("Q10: Are Voyanta luxury itineraries child and family-friendly?",
+        ("Q10: Are the luxury itineraries child and family-friendly?",
          "Yes. We offer specialized Family Marvel journeys with private electric buggies at the Night Safari and Bird Paradise, VIP Universal Studios tours, and child-safe island catamaran excursions."),
 
-        ("Q11: Can Voyanta cater to strict dietary requirements?",
+        ("Q11: Can the concierge cater to strict dietary requirements?",
          "Flawlessly. Our concierges coordinate directly with executive chefs across all dining venues for Halal, Kosher, Vegan, Jain, Gluten-Free, and severe allergy requirements."),
 
         ("Q12: Is tap water safe to drink in Singapore?",
@@ -948,7 +948,7 @@ def build_pdf():
         ("Q14: What is the dress code for Michelin restaurants in Singapore?",
          "Formal or smart casual (collared shirts, long trousers, and closed shoes for gentlemen; elegant day or evening wear for ladies). Avoid shorts, slippers, or athletic wear."),
 
-        ("Q15: Can I book a private yacht to the Southern Islands through Voyanta?",
+        ("Q15: Can I book a private yacht to the Southern Islands through our concierge?",
          "Yes. We offer private 50ft luxury catamarans to Lazarus Island and St. John's Island, complete with captain, crew, private butler, and gourmet picnic barbecues."),
 
         ("Q16: Is chewing gum allowed in Singapore?",
@@ -960,16 +960,16 @@ def build_pdf():
         ("Q18: What is the best month to visit Singapore?",
          "Singapore is a year-round destination. February through April offers clear skies and calm waters for island sailing, while September features the world-renowned Singapore Grand Prix F1."),
 
-        ("Q19: What hotel perks do I get when booking through Voyanta?",
+        ("Q19: What hotel perks do I get when booking through our concierge?",
          "Guaranteed room upgrades subject to availability, daily gourmet breakfast for two, S$150 estate credits, flexible 11 AM check-in / 4 PM check-out, and private butler orientation."),
 
-        ("Q20: Can Voyanta arrange private chef buyouts at Odette?",
+        ("Q20: Can the concierge arrange private chef buyouts at Odette?",
          "Yes. We coordinate exclusive chef counter buyouts with 3-Star Michelin Chef Julien Royer at the National Gallery, tailored for private celebrations."),
 
         ("Q21: How safe is Singapore for solo and female travelers?",
          "Singapore is consistently ranked among the top 3 safest cities in the world, with virtually non-existent violent crime, clean streets, and reliable 24/7 transport."),
 
-        ("Q22: Does Voyanta offer Changi Airport layover tours?",
+        ("Q22: Does the atelier offer Changi Airport layover tours?",
          "Yes. For layovers of 6 hours or more, we arrange express private chauffeur city tours covering Marina Bay, heritage quarters, and Jewel Changi with guaranteed on-time return."),
 
         ("Q23: What payment methods are accepted?",
@@ -978,7 +978,7 @@ def build_pdf():
         ("Q24: How are client deposits protected?",
          "All deposits are held in statutory client trust accounts in strict compliance with the Singapore Tourism Board Travel Agents Act (Cap. 334)."),
 
-        ("Q25: What languages do Voyanta guides speak?",
+        ("Q25: What languages do the guides speak?",
          "All licensed guides speak fluent English. We also provide native French, Mandarin, Japanese, German, Russian, and Arabic specialist guides on request."),
 
         ("Q26: Can I purchase high-end items tax-free in Singapore?",
@@ -987,14 +987,14 @@ def build_pdf():
         ("Q27: What is the dress code when visiting religious shrines?",
          "Modest dress covering shoulders and knees is required at temples and mosques. Shoes must be removed before entering Hindu temples, Buddhist halls, and mosques."),
 
-        ("Q28: How fast does the Voyanta concierge respond?",
+        ("Q28: How fast does the concierge respond?",
          "Our 24/7 dedicated WhatsApp VIP channel responds in under 5 minutes. Email inquiries receive a tailored proposal within 2 hours."),
 
-        ("Q29: Can Voyanta arrange private helicopter transfers?",
+        ("Q29: Can the concierge arrange private helicopter transfers?",
          "Yes, helicopter panoramic city tours and private charter flights are coordinated with Seletar Aerospace Airport and authorized charter operators."),
 
         ("Q30: How do I initiate a booking consultation?",
-         "Submit a private inquiry via our website form, contact our WhatsApp VIP line (+65 9123 4567), or email concierge@voyanta.sg to receive a dedicated proposal.")
+         "Submit a private inquiry via our website form, contact our WhatsApp VIP line (+65 XXXXXXXXX), or email concierge@toursandtravel.com to receive a dedicated proposal.")
     ]
 
     for q, a in faqs:
@@ -1016,7 +1016,7 @@ def build_pdf():
     story.append(Paragraph("• <b>Step 1 (Travel Persona Discovery):</b> Inquire whether the traveler is visiting as a couple (honeymoon/anniversary), family with children, solo luxury explorer, or corporate executive.", bullet_style))
     story.append(Paragraph("• <b>Step 2 (Calendar & Duration Calibration):</b> Clarify intended travel dates, month of arrival, and duration in Singapore (e.g. 3-day weekend, 5-day signature, or 7-day Grand immersion).", bullet_style))
     story.append(Paragraph("• <b>Step 3 (Style & Experiences Alignment):</b> Identify primary passions: Haute Gastronomy, Southern Islands sailing, Heritage & Peranakan culture, Nature & wildlife, or Wellness spas.", bullet_style))
-    story.append(Paragraph("• <b>Step 4 (Proposal & Contact Capture):</b> Recommend 1–2 specific Voyanta packages and VIP add-ons, calculate estimated investment in preferred currency, and collect guest contact details for senior curator follow-up.", bullet_style))
+    story.append(Paragraph("• <b>Step 4 (Proposal & Contact Capture):</b> Recommend 1–2 specific signature packages and VIP add-ons, calculate estimated investment in preferred currency, and collect guest contact details for senior curator follow-up.", bullet_style))
 
     story.append(Paragraph("15.2 Human Curator Handover Trigger Protocol", h2_style))
     story.append(Paragraph(
@@ -1072,19 +1072,22 @@ def build_pdf():
     # End mark
     story.append(Spacer(1, 15))
     story.append(HRFlowable(width="100%", thickness=1.5, color=c_luxury, spaceBefore=10, spaceAfter=15))
-    story.append(Paragraph("<b>VOYANTA PRIVATE ATELIER SINGAPORE • END OF KNOWLEDGE BASE DOSSIER</b>", ParagraphStyle('End', fontName='Helvetica-Bold', fontSize=9, leading=12, alignment=1, textColor=c_primary)))
+    story.append(Paragraph("<b>LUXURY TRAVEL ATELIER & CONCIERGE • END OF KNOWLEDGE BASE DOSSIER</b>", ParagraphStyle('End', fontName='Helvetica-Bold', fontSize=9, leading=12, alignment=1, textColor=c_primary)))
 
     # Build PDF
     doc.build(story, canvasmaker=NumberedCanvas)
     print(f"Successfully generated {pdf_filename}!")
 
-    # Also copy to public folder if it exists
+    import shutil
+    shutil.copyfile(pdf_filename, "AI_Chatbot_Knowledge_Base.pdf")
+    print("Created copy: AI_Chatbot_Knowledge_Base.pdf")
+
+    # Also copy to public folder
     pub_dir = "public"
-    if os.path.exists(pub_dir):
-        import shutil
-        dest = os.path.join(pub_dir, pdf_filename)
-        shutil.copyfile(pdf_filename, dest)
-        print(f"Copied PDF to {dest}!")
+    os.makedirs(pub_dir, exist_ok=True)
+    shutil.copyfile(pdf_filename, os.path.join(pub_dir, pdf_filename))
+    shutil.copyfile("AI_Chatbot_Knowledge_Base.pdf", os.path.join(pub_dir, "AI_Chatbot_Knowledge_Base.pdf"))
+    print(f"Copied PDFs to {pub_dir}!")
 
 if __name__ == "__main__":
     build_pdf()
